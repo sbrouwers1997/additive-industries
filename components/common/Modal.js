@@ -32,10 +32,10 @@ const Modal = ({ open, children, onClose, small, medium, large }) => {
   return (
     <AnimatePresence exitBeforeEnter>
       {open && (
-        <>
-          <div className='fixed top-0 left-0 z-30 w-full h-full bg-black opacity-50 '></div>
+        <motion.div>
+          <div className='fixed top-0 left-0 z-40 w-full h-full bg-black opacity-50 '></div>
           <div
-            className={`fixed top-0 left-0 z-40 flex items-center justify-center w-full h-full`}
+            className={`fixed top-0 left-0 z-50 flex items-center justify-center w-full h-full`}
           >
             <div
               ref={ref}
@@ -46,7 +46,7 @@ const Modal = ({ open, children, onClose, small, medium, large }) => {
               {children}
             </div>
           </div>
-        </>
+        </motion.div>
       )}
     </AnimatePresence>
   );

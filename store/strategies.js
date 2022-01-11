@@ -1,6 +1,6 @@
 export const strategies = [
   {
-    name: 'Strategy A',
+    name: 'Strategy AL',
     timesUsed: 578,
     successRate: '99%',
   },
