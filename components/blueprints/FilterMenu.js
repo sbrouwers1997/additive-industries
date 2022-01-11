@@ -25,14 +25,13 @@ const FilterMenu = ({ activeFilter, setActiveFilter }) => {
         <p
           className={` ${
             activeFilter === 'others'
-              ? 'border-b opacity-100  border-black '
+              ? 'border-b opacity-100 mr-8 border-black '
               : 'opacity-50 border-b border-transparent'
           }  mr-8 transition-all duration-500 pb-1 background-none`}
           onClick={() => setActiveFilter('others')}
         >
           others
         </p>
-        <div className='mr-8'></div>
 
         <div>
           <div
