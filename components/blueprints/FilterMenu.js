@@ -32,7 +32,7 @@ const FilterMenu = ({ activeFilter, setActiveFilter }) => {
         >
           others
         </p>
-        <div className='w-8'></div>
+        <div className='mr-8'></div>
 
         <div>
           <div

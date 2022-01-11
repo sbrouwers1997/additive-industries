@@ -44,7 +44,7 @@ const FilterMenu = ({ activeFilter, setActiveFilter }) => {
         >
           multiplex
         </p>
-        <div className='w-8'></div>
+        <div className='mr-8'></div>
         <div>
           <div
             className='absolute top-0 left-0 w-6 h-20'
