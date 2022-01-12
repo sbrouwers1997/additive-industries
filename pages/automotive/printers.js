@@ -30,24 +30,14 @@ export default function AutomotiveMain() {
       <div className='mt-8'>
         <h2 className='mb-6 text-3xl'>Select printer</h2>
 
-        <div className='w-screen -ml-6 border-b'>
-          <div className='grid items-center grid-cols-12 pb-3 mx-6 text-xs font-light opacity-70'>
-            <h5 className='col-span-5'>Name</h5>
-            <p className='col-span-3'>Core</p>
-            <p className='col-span-3 -ml-2'>available in</p>
-          </div>
-        </div>
         <div className='relative pt-3 pb-32 overflow-scroll h-108'>
           {printers.map((item, index) => {
             return (
               <ListItem
                 item={item}
                 key={index}
-                differentMaterials={item.differentMaterials}
                 name={item.name}
-                core={item.core}
-                available={item.available}
-                id={item.id}
+                cores={item.cores}
               />
             );
           })}

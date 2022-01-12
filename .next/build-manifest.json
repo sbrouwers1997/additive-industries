@@ -15,11 +15,6 @@
     "static/development/_middlewareManifest.js"
   ],
   "pages": {
-    "/": [
-      "static/chunks/webpack.js",
-      "static/chunks/main.js",
-      "static/chunks/pages/index.js"
-    ],
     "/_app": [
       "static/chunks/webpack.js",
       "static/chunks/main.js",
@@ -30,15 +25,15 @@
       "static/chunks/main.js",
       "static/chunks/pages/_error.js"
     ],
-    "/automotive/blueprints": [
+    "/automotive/printers": [
       "static/chunks/webpack.js",
       "static/chunks/main.js",
-      "static/chunks/pages/automotive/blueprints.js"
+      "static/chunks/pages/automotive/printers.js"
     ],
-    "/automotive/materials": [
+    "/automotive/selection": [
       "static/chunks/webpack.js",
       "static/chunks/main.js",
-      "static/chunks/pages/automotive/materials.js"
+      "static/chunks/pages/automotive/selection.js"
     ]
   },
   "ampFirstPages": []

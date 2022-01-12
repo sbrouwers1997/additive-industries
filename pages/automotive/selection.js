@@ -34,22 +34,22 @@ export default function AutomotiveMain() {
           <FinalSelection
             title={'Blueprint'}
             content={globalCtx.blueprint?.name}
-            link={'/blueprints'}
+            link={'/blueprints?edit=true'}
           />
           <FinalSelection
             title={'Material'}
             content={globalCtx.material?.name}
-            link={'/materials'}
+            link={'/materials?edit=true'}
           />
           <FinalSelection
             title={'Printer'}
             content={globalCtx.printer?.name}
-            link={'/printers'}
+            link={'/printers?edit=true'}
           />
           <FinalSelection
             title={'Strategy'}
             content={globalCtx.strategy?.name}
-            link={'/strategies'}
+            link={'/strategies?edit=true'}
           />
         </div>
       </div>
