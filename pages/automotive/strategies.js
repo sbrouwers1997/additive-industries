@@ -54,7 +54,7 @@ export default function AutomotiveMain() {
             })}
           </>
           <h2 className='mt-8 mb-2 text-xl '>Other strategies</h2>
-          <>
+          <div className='mb-20'>
             {strategies.map((item, index) => {
               return (
                 <ListItem
@@ -66,9 +66,8 @@ export default function AutomotiveMain() {
                 />
               );
             })}
-          </>
+          </div>
         </div>
-        <div className='h-20'></div>
 
         <NextButton link='/automotive/selection' active={globalCtx.strategy} />
       </div>
