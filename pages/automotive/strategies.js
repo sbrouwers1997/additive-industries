@@ -68,6 +68,7 @@ export default function AutomotiveMain() {
             })}
           </>
         </div>
+        <div className='h-20'></div>
 
         <NextButton link='/automotive/selection' active={globalCtx.strategy} />
       </div>
