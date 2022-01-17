@@ -11,6 +11,9 @@ const Modal = ({ open, children, onClose, small, medium, large }) => {
     },
     animate: {
       y: 0,
+      transition: {
+        ease: 'easeOut',
+      },
     },
   };
 

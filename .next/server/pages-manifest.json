@@ -2,5 +2,5 @@
   "/_app": "pages/_app.js",
   "/_document": "pages/_document.js",
   "/_error": "pages/_error.js",
-  "/automotive/blueprints": "pages/automotive/blueprints.js"
+  "/automotive/materials": "pages/automotive/materials.js"
 }
