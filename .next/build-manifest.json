@@ -25,10 +25,30 @@
       "static/chunks/main.js",
       "static/chunks/pages/_error.js"
     ],
+    "/automotive/blueprints": [
+      "static/chunks/webpack.js",
+      "static/chunks/main.js",
+      "static/chunks/pages/automotive/blueprints.js"
+    ],
+    "/automotive/materials": [
+      "static/chunks/webpack.js",
+      "static/chunks/main.js",
+      "static/chunks/pages/automotive/materials.js"
+    ],
     "/automotive/printers": [
       "static/chunks/webpack.js",
       "static/chunks/main.js",
       "static/chunks/pages/automotive/printers.js"
+    ],
+    "/automotive/selection": [
+      "static/chunks/webpack.js",
+      "static/chunks/main.js",
+      "static/chunks/pages/automotive/selection.js"
+    ],
+    "/automotive/strategies": [
+      "static/chunks/webpack.js",
+      "static/chunks/main.js",
+      "static/chunks/pages/automotive/strategies.js"
     ]
   },
   "ampFirstPages": []
