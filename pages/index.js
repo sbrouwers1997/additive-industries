@@ -21,7 +21,7 @@ export default function Home() {
           <Categorie
             title={item.categorie}
             color={item.color}
-            href={`${item.link}/blueprints`}
+            href={`${item.link ? `${item.link}/blueprints` : '/'}`}
             key={item.categorie}
           />
         ))}

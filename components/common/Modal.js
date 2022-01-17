@@ -2,7 +2,7 @@ import React, { useEffect, useRef } from 'react';
 import CloseIcon from '../icons/CloseIcon';
 import { motion, AnimatePresence } from 'framer-motion';
 
-const Modal = ({ open, children, onClose, small, medium, large }) => {
+const Modal = ({ open, children, onClose }) => {
   const ref = useRef();
 
   const modal = {
@@ -37,7 +37,7 @@ const Modal = ({ open, children, onClose, small, medium, large }) => {
       {open && (
         <motion.div>
           <motion.div
-            className='fixed top-0 left-0 z-40 w-full h-full bg-black opacity-50 '
+            className='fixed top-0 left-0 z-40 w-full h-full bg-black opacity-50 pointer-events-none '
             initial={{ opacity: 0 }}
             animate={{ opacity: 0.5 }}
             exit={{ opacity: 0 }}

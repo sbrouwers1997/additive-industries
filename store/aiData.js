@@ -29,7 +29,7 @@ export const aiData = [
   {
     categorie: 'Aerospace',
     color: 'orange',
-    link: '/aerospace',
+    link: false,
     presets: [
       {
         title: 'Aero engine',
@@ -54,11 +54,11 @@ export const aiData = [
   {
     categorie: 'Space industries',
     color: 'purple',
-    link: '/space-industries',
+    link: false,
   },
   {
     categorie: 'Water',
     color: 'blue',
-    link: '/water',
+    link: false,
   },
 ];

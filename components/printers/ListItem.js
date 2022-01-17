@@ -72,7 +72,7 @@ const ListItem = ({ item, name, cores }) => {
           you’ve selected. Please confirm with a superior that this is the right
           option.
         </p>
-        <div className='grid grid-cols-2 gap-2 mt-8'>
+        <div className='grid grid-cols-2 gap-2 my-4'>
           <button
             className='w-full py-4 font-medium text-white rounded-lg bg-ai-main-darkblue'
             onClick={() => {
