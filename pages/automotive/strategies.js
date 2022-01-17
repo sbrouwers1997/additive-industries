@@ -33,22 +33,40 @@ export default function AutomotiveMain() {
         <div className='w-screen -ml-6 border-b'>
           <div className='grid items-center grid-cols-12 pb-3 mx-6 text-xs font-light opacity-70'>
             <h5 className='col-span-5'>Strategy</h5>
-            <p className='col-span-4'>Times used</p>
+            <p className='col-span-3'>Times used</p>
             <p className='col-span-3'>Success rate</p>
           </div>
         </div>
-        <div className='relative pt-3 pb-16 overflow-scroll h-108'>
-          {strategies.map((item, index) => {
-            return (
-              <ListItem
-                key={index}
-                item={item}
-                name={item.name}
-                timesUsed={item.timesUsed}
-                successRate={item.successRate}
-              />
-            );
-          })}
+        <div className='relative py-8 overflow-scroll h-108'>
+          <h2 className='mb-2 text-xl '>Recommended</h2>
+          <>
+            {strategies.map((item, index) => {
+              return (
+                <ListItem
+                  key={index}
+                  item={item}
+                  name={item.name}
+                  quality={item.quality}
+                  speed={item.speed}
+                  recommended={true}
+                />
+              );
+            })}
+          </>
+          <h2 className='mt-8 mb-2 text-xl '>Other strategies</h2>
+          <>
+            {strategies.map((item, index) => {
+              return (
+                <ListItem
+                  key={index}
+                  item={item}
+                  name={item.name}
+                  quality={item.quality}
+                  speed={item.speed}
+                />
+              );
+            })}
+          </>
         </div>
 
         <NextButton link='/automotive/selection' active={globalCtx.strategy} />

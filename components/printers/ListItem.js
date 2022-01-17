@@ -64,17 +64,17 @@ const ListItem = ({ item, name, cores }) => {
         </motion.div>
       </AnimatePresence>
       <Modal open={warning} onClose={setWarning}>
-        <h3 className='text-lg font-medium'>
+        <h3 className='mb-2 text-xl font-medium'>
           Printer is using different materials
         </h3>
-        <p className='text-sm'>
+        <p className='text-md'>
           The printer you selected is using different materials from the one
           you’ve selected. Please confirm with a superior that this is the right
           option.
         </p>
-        <div className='grid grid-cols-2 gap-2 mt-4'>
+        <div className='grid grid-cols-2 gap-2 mt-8'>
           <button
-            className='w-full py-3 font-medium text-white rounded-lg bg-ai-main-darkblue'
+            className='w-full py-4 font-medium text-white rounded-lg bg-ai-main-darkblue'
             onClick={() => {
               setWarning(false), globalCtx.setPrinter('');
             }}
@@ -82,7 +82,7 @@ const ListItem = ({ item, name, cores }) => {
             Choose other
           </button>
           <button
-            className='w-full py-3 font-medium text-black text-opacity-50 rounded-lg bg-ai-main-buttongray'
+            className='w-full py-4 font-medium text-black text-opacity-50 rounded-lg bg-ai-main-buttongray'
             onClick={() => setWarning(false)}
           >
             Use printer

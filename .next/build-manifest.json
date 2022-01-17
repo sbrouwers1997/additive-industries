@@ -25,15 +25,10 @@
       "static/chunks/main.js",
       "static/chunks/pages/_error.js"
     ],
-    "/automotive/printers": [
+    "/automotive/blueprints": [
       "static/chunks/webpack.js",
       "static/chunks/main.js",
-      "static/chunks/pages/automotive/printers.js"
-    ],
-    "/automotive/selection": [
-      "static/chunks/webpack.js",
-      "static/chunks/main.js",
-      "static/chunks/pages/automotive/selection.js"
+      "static/chunks/pages/automotive/blueprints.js"
     ]
   },
   "ampFirstPages": []
